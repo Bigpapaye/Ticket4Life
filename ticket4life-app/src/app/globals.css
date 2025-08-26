@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F6EADA; /* cream brand background */
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Force light theme: no dark override */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Accessibilité: focus visible global pour éléments interactifs */
+:is(button, [role="button"], a, input, select, textarea):focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+/* Respecter le paramètre de réduction des animations */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ticket4life-contracts",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "hardhat compile",
+    "clean": "hardhat clean",
+    "test": "hardhat test",
+    "deploy:base-sepolia": "hardhat run --network base-sepolia scripts/deploy.ts",
+    "deploy:quiz:base-sepolia": "hardhat run --network base-sepolia scripts/deployQuiz.ts",
+    "deploy:marketv2:base-sepolia": "hardhat run --network base-sepolia scripts/deployMarketV2.ts"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.8.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  }
+}

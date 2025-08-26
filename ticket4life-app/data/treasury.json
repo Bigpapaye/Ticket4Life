@@ -1,0 +1,21 @@
+{
+  "updatedAt": 1756047258293,
+  "updatedBy": "0x4999BCb319C604FF5Dc5dFE29159fEb4A091f7dE",
+  "entries": [
+    {
+      "name": "$USDC on NEXO",
+      "wallet": "0x4999BCb319C604FF5Dc5dFE29159fEb4A091f7dE",
+      "usdc": "20000"
+    },
+    {
+      "name": "$NEXO TOKEN",
+      "wallet": "0x587AF9a70AE339C47848Da88748ce537C724d1b2",
+      "usdc": "2000"
+    },
+    {
+      "name": "$USDC on AAVE",
+      "wallet": "0x587AF9a70AE339C47848Da88748ce537C724d1b2",
+      "usdc": "20000"
+    }
+  ]
+}
