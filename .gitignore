@@ -18,6 +18,8 @@ yarn-error.log*
 **/.env
 **/.env.*
 !**/.env.example
+!**/.env.local.example
+!ticket4life-app/.env.local.example
 
 # Next.js
 /ticket4life-app/.next/
